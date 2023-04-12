@@ -1,0 +1,42 @@
+:root {
+  font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  /* background-color: #242424; */
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+}
+.app {
+  width: 1010px;
+  margin: 0 auto;
+  background: #868588;
+  padding: 5px 15px;
+}
+h1 {
+  line-height: 1.5;
+  font-weight: 400;
+  
+}
+.navBar {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 2px solid rgb(46, 45, 45);
+}
+.navBar a {
+  margin: auto 0;
+  transition: all .5s;
+}
+.navBar a:hover {
+  font-size: 120%;
+  color: rgba(13, 35, 235, 0.87);
+}
+.homePage h2 {
+  color: antiquewhite;
+}
+
