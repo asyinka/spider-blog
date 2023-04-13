@@ -1,5 +1,6 @@
 :root {
   font-family: system-ui, -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
   
 
   /* color-scheme: light dark; */
@@ -13,13 +14,12 @@
   -webkit-text-size-adjust: 100%; */
 }
 .app {
-  width: 1010px;
+  width: 850px;
   margin: 0 auto;
   background: #868588;
   padding: 5px 15px;
 }
 h1 {
-  line-height: 1.5;
   font-weight: 400;
   
 }
@@ -38,8 +38,10 @@ h1 {
   font-size: 120%;
   color: #ff991cee;
 }
-.homePage h2 {
+.blogsHeading {
   color: antiquewhite;
+  text-align: center;
+  text-shadow: 2px 2px 4px red;
 }
 .blogDetails {
   padding: 10px;
@@ -48,8 +50,15 @@ h1 {
   cursor: pointer;
 }
 .blogDetails:hover {
-  background-color: rgb(68, 66, 66);
+  background-color: rgb(44, 42, 42);
   border-radius: 20px;
   font-size: 110%;
 }
-
+.blogsData {
+  text-decoration: none;
+  color: white;
+}
+.fullBlog p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
