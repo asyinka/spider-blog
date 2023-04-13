@@ -1,19 +1,16 @@
 import Homepage from "./HomePage";
 import NavBar from "./NavBar";
 
-export default function App(){
+export default function App() {
   return (
     <div className="app">
       <NavBar />
-      <Homepage />
+      <div>
+        <Homepage />
+      </div>
     </div>
-  )
+  );
 }
-
-
-
-
-
 
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'

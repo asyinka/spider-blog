@@ -30,11 +30,12 @@ h1 {
 }
 .navBar a {
   margin: auto 0;
+  color: #ffcd8f;
   transition: all .5s;
 }
 .navBar a:hover {
   font-size: 120%;
-  color: rgba(13, 35, 235, 0.87);
+  color: #ff991cee;
 }
 .homePage h2 {
   color: antiquewhite;
