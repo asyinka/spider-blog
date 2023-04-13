@@ -31,6 +31,7 @@ h1 {
 .navBar a {
   margin: auto 0;
   color: #ffcd8f;
+  cursor: pointer;
   transition: all .5s;
 }
 .navBar a:hover {
@@ -39,5 +40,16 @@ h1 {
 }
 .homePage h2 {
   color: antiquewhite;
+}
+.blogDetails {
+  padding: 10px;
+  margin: 10px 0;
+  transition: all 1s;
+  cursor: pointer;
+}
+.blogDetails:hover {
+  background-color: rgb(68, 66, 66);
+  border-radius: 20px;
+  font-size: 110%;
 }
 

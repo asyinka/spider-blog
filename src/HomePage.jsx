@@ -4,7 +4,7 @@ import Articles from "./Articles";
 const Homepage = () => {
   const [year, setYear] = useState(2022);
 
-  const blogs = [
+  const [blogs, setBlogs] = useState([
     {
       Title: "War between Ukraine and Russia",
       Body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.Libero illo rem culpa perferendis accusamus? Tenetur suscipit dolore, temporibus facere sequi possimus. In recusandae saepe nostrum id rerum sunt quibusdam",
@@ -23,13 +23,12 @@ const Homepage = () => {
       Author: "Roberts",
       id: 3,
     },
-  ];
+  ]);
 
   return (
     <div className="homePage">
       <h2>ALL BLOGS</h2>
-      <span> {year} blogs</span>
-      <Articles blogs={blogs} />
+      <Articles blogs={blogs} year={year} />
     </div>
   );
 };
