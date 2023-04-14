@@ -12,6 +12,8 @@ const ReadArticles = () => {
 
   return (
     <div className="BlogContainer">
+      {isPending && <div>loading...</div>}
+      {error && <div>{error}</div>}
       {blog && (
         <article className="fullBlog">
           <h2>{blog.Title}</h2>
