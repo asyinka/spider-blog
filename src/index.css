@@ -62,3 +62,42 @@ h1 {
   font-size: 1.3rem;
   font-weight: 500;
 }
+.createForm { 
+  /* text-align: center; */
+  width: fit-content;
+  padding: 30px 40px;
+  border-radius: 10px;
+  margin: 25px auto;
+  background-color:  #bebcc5;
+  box-shadow: 2px 4px 4px #e4e47a;
+}
+.createForm h2 {
+  color: #03351c;
+  text-align: center;
+}
+.createForm label {
+  display: block;
+  font-size: 1.5rem;
+}
+.createInput {
+  width: 300px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  font-size: 1.3rem;
+}
+.createFormButton {
+  display: block;
+  margin: 10px 0;
+  width: 250;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  border: none;
+
+}
+.createFormButton:hover {
+  background: #a48ecf;
+  transition: color, 2s;
+}
