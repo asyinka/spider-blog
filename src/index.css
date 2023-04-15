@@ -101,3 +101,7 @@ h1 {
   background: #a48ecf;
   transition: color, 2s;
 }
+.buttonLoading {
+  border-radius: 10px;
+  font-style: italic;
+}

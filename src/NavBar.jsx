@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <nav className="navBar">
       <h1>Spider Blog</h1>
-      <a href="/">Homepage</a>
-      <a href="/create-form">Create Blog</a>
+      <Link to="/">Homepage</Link>
+      <Link to="/create-form">Create Blog</Link>
     </nav>
   );
 };

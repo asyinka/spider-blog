@@ -1,8 +1,17 @@
-import { useParams } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import useFetchData from "./useFetchData/useFetchData";
 
 const ReadArticles = () => {
   const { id } = useParams();
+
+  const history = useHistory();
+
+  function HandleDelete() {
+    fetch("http://localhost:4000/blogs/" + id, { method: "DELETE" });
+
+    history.push("/");
+    console.log("Deleted Blog article", id);
+  }
 
   const {
     blogs: blog,
@@ -19,6 +28,9 @@ const ReadArticles = () => {
           <h2>{blog.Title}</h2>
           <span>{blog.Author}</span>
           <p>{blog.Body}</p>
+          <button onClick={HandleDelete} className="createFormButton">
+            Delete Blog
+          </button>
         </article>
       )}
     </div>
