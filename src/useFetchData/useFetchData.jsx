@@ -14,6 +14,9 @@ const useFetchData = (url) => {
         return resp.json();
       })
       .then((actResp) => setBlogs(actResp))
+      .then(() => {
+        setIsPending(false);
+      })
       .catch((error) => {
         if (error === "AbortError") {
           setError("fetch process failed");
@@ -21,7 +24,6 @@ const useFetchData = (url) => {
         console.log(error.message);
         setError(error.message);
       });
-    setIsPending(false);
   }, []);
 
   return { blogs, isPending, error };

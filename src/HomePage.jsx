@@ -11,8 +11,8 @@ const Homepage = () => {
 
   return (
     <div className="homePage">
-      {error && <div className="alrtDisp">{error}</div>}
       {isPending && <div className="alrtDisp"> Loading... </div>}
+      {error && <div className="alrtDisp">{error}</div>}
       {blogs && <Articles blogs={blogs} year={year} />}
     </div>
   );
