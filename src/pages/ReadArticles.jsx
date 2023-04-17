@@ -1,5 +1,5 @@
 import { useHistory, useParams } from "react-router-dom";
-import useFetchData from "./useFetchData/useFetchData";
+import useFetchData from "../hooks/useFetchData";
 
 const ReadArticles = () => {
   const { id } = useParams();

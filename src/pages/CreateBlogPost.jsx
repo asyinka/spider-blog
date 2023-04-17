@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-const CreateForm = () => {
+const CreateBlogPost = () => {
   const [Title, setTitle] = useState("");
   const [Body, setBody] = useState("");
   const [Author, setAuthor] = useState("");

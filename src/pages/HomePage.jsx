@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Articles from "./Articles";
-import useFetchData from "./useFetchData/useFetchData";
+import Articles from "../components/Articles";
+import useFetchData from "../hooks/useFetchData";
 
 const Homepage = () => {
   const [year, setYear] = useState(2022);
