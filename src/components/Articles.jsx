@@ -10,7 +10,7 @@ const Articles = (props) => {
       <h2 className="blogsHeading">ALL BLOGS</h2>
       <span className="year">Latest {year} blogs</span>
       {blogs.map((blog) => (
-        <SingleArticle blog={blog} />
+        <SingleArticle blog={blog} key={blog.id} />
       ))}
     </article>
   );
