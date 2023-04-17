@@ -2,18 +2,18 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 const CreateBlogPost = () => {
-  const [Title, setTitle] = useState("");
-  const [Body, setBody] = useState("");
-  const [Author, setAuthor] = useState("");
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [author, setAuthor] = useState("");
   const [isPending, setIsPending] = useState(false);
   const history = useHistory();
 
-  function HandleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
 
     setIsPending(true);
 
-    const blogContent = { Title, Body, Author };
+    const blogContent = { title: title, body: body, author: author };
 
     fetch("http://localhost:4000/blogs", {
       method: "POST",
@@ -32,7 +32,7 @@ const CreateBlogPost = () => {
   }
 
   return (
-    <form className="createForm" onSubmit={HandleSubmit}>
+    <form className="createForm" onSubmit={handleSubmit}>
       <h2>Create Post</h2>
       <label htmlFor="title">Title</label>
       <input
@@ -41,7 +41,7 @@ const CreateBlogPost = () => {
         type="text"
         required
         name="title"
-        defaultValue={Title}
+        defaultValue={title}
         onChange={(e) => setTitle(e.target.value)}
       />
       <label htmlFor="blog">Blog text</label>
@@ -49,14 +49,14 @@ const CreateBlogPost = () => {
         className="createInput"
         id="blog"
         required
-        value={Body}
+        value={body}
         onChange={(e) => setBody(e.target.value)}
       ></textarea>
       <label htmlFor="Author">Written by:</label>
       <input
         className="createInput"
         type="text"
-        value={Author}
+        value={author}
         onChange={(e) => setAuthor(e.target.value)}
         name="Author"
       />

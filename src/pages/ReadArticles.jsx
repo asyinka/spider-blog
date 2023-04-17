@@ -28,9 +28,9 @@ const ReadArticles = () => {
       {error && <div>{error}</div>}
       {blog && (
         <article className="fullBlog">
-          <h2>{blog.Title}</h2>
-          <span>{blog.Author}</span>
-          <p>{blog.Body}</p>
+          <h2>{blog.title}</h2>
+          <span>{blog.author}</span>
+          <p>{blog.body}</p>
           <button onClick={handleDelete} className="createFormButton">
             Delete Blog
           </button>
