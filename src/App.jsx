@@ -1,7 +1,7 @@
 import Homepage from "./pages/HomePage";
 import ReadArticles from "./pages/ReadArticles";
 import CreateBlogPost from "./pages/CreateBlogPost";
-import NavBar from "./NavBar";
+import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export default function App() {

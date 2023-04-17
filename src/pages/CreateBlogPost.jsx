@@ -70,4 +70,4 @@ const CreateBlogPost = () => {
   );
 };
 
-export default CreateForm;
+export default CreateBlogPost;
