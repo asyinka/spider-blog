@@ -1,8 +1,8 @@
-import Homepage from "./HomePage";
+import Homepage from "./pages/HomePage";
+import ReadArticles from "./pages/ReadArticles";
+import CreateBlogPost from "./pages/CreateBlogPost";
 import NavBar from "./NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ReadArticles from "./ReadArticles";
-import CreateForm from "./CreateForm";
 
 export default function App() {
   return (
@@ -17,8 +17,8 @@ export default function App() {
             <Route path={"/blogs/:id"}>
               <ReadArticles />
             </Route>
-            <Route path={"/create-form"}>
-              <CreateForm />
+            <Route path={"/create-blog"}>
+              <CreateBlogPost />
             </Route>
           </Switch>
         </div>
